@@ -1,0 +1,33 @@
+{
+  "name": "vag-datalog-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "node-red" : {
+    "nodes": {
+        "Transmitter CM44x series": "Transmitter CM44x series.js",
+        "Transmitter CM442": "Transmitter CM442.js",
+        "Transmitter CM444": "Transmitter CM444.js",
+        "Water Sampler CSF48": "Water Sampler CSF48.js",
+        "EL200": "EL200.js",
+        "Water Analyzer UV300": "Water Analyzer UV300.js",
+        "GCEM4000": "GCEM4000.js",
+        "DCEM2000": "DCEM2000.js",
+        "VCEM5000": "VCEM5000.js",
+        "AMI Trides": "AMI Trides.js",
+        "AMI Turbiwell 7027": "AMI Turbiwell 7027.js",
+        "FTP": "FTP.js",
+        "iLotusLand MQTT": "iLotusLand MQTT.js",
+        "iLotusLand Remote Control": "iLotusLand Remote Control.js",
+        "Datalog": "Datalog.js",
+        "Digital Input": "Digital Input.js",
+        "Digital Output": "Digital Output.js",
+        "ModBus RTU": "ModBus RTU.js"
+    }
+}
+}

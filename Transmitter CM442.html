@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Transmitter CM442',{
+        category: 'Endress Hauser',
+        color: '#c0bfff',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: 'EH.svg',
+        label: function() {
+            return this.name||"Transmitter CM442";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Transmitter CM442">
+    <div class="form-row">
+        <label for="node-input-parameter"><i class="fa fa-tag"></i> Modbus Parameter</label>
+        <select id="node-input-parameter">
+            <option value="9600">Baudrate: 9600 | No parity</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-channel"><i class="fa fa-tag"></i> Channel</label>
+        <select id="node-input-channel">
+            <option value="1">1</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-unit"><i class="fa fa-tag"></i> Unit</label>
+        <input type="text" id="node-input-unit" placeholder="Unit">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="Transmitter CM442">
+    <p>A Transmitter CM442 custom node in node-red</p>
+</script>

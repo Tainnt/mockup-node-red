@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Water Analyzer UV300',{
+        category: 'Tethys',
+        color: '#5bb6ad',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: 'tethys.png',
+        label: function() {
+            return this.name||"Water Analyzer UV300";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Water Analyzer UV300">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <!-- <div class="form-row">
+        <label for="node-input-value"><i class="fa fa-tag"></i> Value</label>
+        <input type="text" id="node-input-value" placeholder="Value">
+    </div> -->
+</script>
+
+<script type="text/html" data-help-name="Water Analyzer UV300">
+    <p>A Water Analyzer UV300 custom node in node-red</p>
+</script>

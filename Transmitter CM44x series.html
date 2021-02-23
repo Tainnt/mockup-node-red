@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Transmitter CM44x series',{
+        category: 'Endress Hauser',
+        color: '#c0bfff',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: 'EH.svg',
+        label: function() {
+            return this.name||"Transmitter CM44x series";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Transmitter CM44x series">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="Transmitter CM44x series">
+    <p>A Transmitter CM44x series custom node in node-red</p>
+</script>

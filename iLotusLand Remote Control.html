@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('iLotusLand Remote Control',{
+        category: 'iLotusland',
+        color: '#f0ece4',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: 'iltl.png',
+        label: function() {
+            return this.name||"iLotusLand Remote Control";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="iLotusLand Remote Control">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="iLotusLand Remote Control">
+    <p>A iLotusLand custom node in node-red</p>
+</script>

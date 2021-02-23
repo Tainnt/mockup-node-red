@@ -1,0 +1,12 @@
+#red-ui-header span.red-ui-header-logo img {
+    height: 35px;    
+}
+
+#red-ui-header span.red-ui-header-logo span:not(:first-child) {
+    margin-left: 10px;
+}
+
+#red-ui-header span.red-ui-header-logo span {
+    vertical-align: middle;
+    font-size: 24px !important;
+}

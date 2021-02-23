@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('iLotusLand MQTT',{
+        category: 'iLotusland',
+        color: '#f0ece4',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: 'iltl.png',
+        label: function() {
+            return this.name||"iLotusLand MQTT";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="iLotusLand MQTT">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="iLotusLand MQTT">
+    <p>A iLotusLand custom node in node-red</p>
+</script>

@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('DCEM2000',{
+        category: 'Codel',
+        color: '#FFC0CB',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: 'codel.png',
+        label: function() {
+            return this.name||"DCEM2000";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="DCEM2000">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <!-- <div class="form-row">
+        <label for="node-input-value"><i class="fa fa-tag"></i> Value</label>
+        <input type="text" id="node-input-value" placeholder="Value">
+    </div> -->
+</script>
+
+<script type="text/html" data-help-name="DCEM2000">
+    <p>A DCEM2000 custom node in node-red</p>
+</script>
