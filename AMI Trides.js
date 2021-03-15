@@ -6,6 +6,7 @@ module.exports = function(RED) {
             msg.payload = "test";
             node.send(msg);
         });
+        // console.log('object :>> ', object);
     }
     RED.nodes.registerType('AMI Trides',sampleFunc);
 }
