@@ -6,6 +6,7 @@ module.exports = function(RED) {
             msg.payload = "test";
             node.send(msg);
         });
+        // console.log(object);
     }
     RED.nodes.registerType('Digital Output',sampleFunc);
 }
